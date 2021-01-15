@@ -1,2 +1,2 @@
 # WDD330
-Repository for Web Frontend Development portpolio
+Repository for Web Frontend Development portfolio
