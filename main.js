@@ -13,7 +13,7 @@ const links = [
 	}
 ];
 
-const ol = document.querySelector("ol");
+const ol = document.getElementById("portfolioLinks");
 
 for (const item of links) {
 	const li = document.createElement("li");
