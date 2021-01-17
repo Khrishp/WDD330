@@ -1,67 +1,26 @@
 body {
-    background-color: aliceblue;
-    margin: 2em;
-}
-
-.titleBar {
-    background-color: bisque; 
-    border: .1em solid grey;
-    border-bottom: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: gray;
     display: flex;
-    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.navBarTop {
-    background-color: bisque; 
-    border: .1em solid grey; 
-    border-top: .1em dashed grey;
-    display: flex;
-    align-items: center;
+#backg {
+    height: 100%;
+    width: 100%;
+    background-color:  aliceblue;
+    opacity: 30%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    position: absolute;
+    z-index: -1;
 }
 
-.sideBar {
-    background-color: #f0c899; 
-    border: .1vw solid grey; 
-    border-radius: 10px;
-    display: list-item;
+#titleBar {
+    border-bottom: solid;
+    border-color: gray;
 }
 
-.schoolTitle {
-    font-size: 3vw;
-    text-align: center;
-    text-shadow: 2px 2px lightgray;
-}
-
-.navItem {
-    font-family: Arial;
-    font-size: 1.4vw;
-    border: .1vw solid gray;
-    background: coral;
-    text-align: center;
-}
-
-.navItem:hover {
-    background-color: darkseagreen;
-    color: floralwhite;
-}
-
-.navItem.active {
-    background-color: green;
-    color: floralwhite;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 1%;
+#list {
 }
 
 ol {

@@ -1,3 +1,4 @@
+//debugger;
 const links = [
 	{
 		label: "Week 01",
@@ -13,14 +14,17 @@ const links = [
 	}
 ];
 
-const ol = document.getElementById("portfolioLinks");
+document.addEventListener("DOMContentLoaded", function() {
+	
+	const ol = document.querySelector("ol");
 
-for (const item of links) {
-	const li = document.createElement("li");
-	const a = document.createElement("a");
-	a.setAttribute("href", item.url);
-	a.textContent = item.label;
-	li.appendChild(a);
+	for (const item of links) {
+		const li = document.createElement("li");
+		const a = document.createElement("a");
+		a.setAttribute("href", item.url);
+		a.textContent = item.label;
+		li.appendChild(a);
+		ol.appendChild(li);
+	}
+});
 
-	ol.appendChild(li);
-}
