@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 02 Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="week2.js"></script>
+</head>
+<body>
+    <div id="backg"></div>
+    <div id="title">
+        <h1>Week 3 Team Activity</h1>
+    </div>
+    <table>
+        <tr>
+            <textarea class="ioText" id="input" autofocus placeholder="Enter text to be copied here."></textarea>
+        </tr>
+        <tr>
+
+            <button type="button" onclick="buttonClickBasic()">Copy</button>
+        </tr>
+        <tr>
+            <textarea class="ioText" id="output" contenteditable="false"></textarea>
+        </tr>
+    </table>
+    <hr class="rounded">
+    <table>
+        <tr>
+            <textarea class="ioText" id="input2" autofocus placeholder="Enter a number"></textarea>
+        </tr>
+        <tr>
+            <button type="button" onclick="buttonClickAdvanced()">Add</button>
+        </tr>
+        <tr>
+            <textarea class="ioText" id="output2" contenteditable="false"></textarea>
+        </tr>
+    </table>
+    <hr class="rounded">
+    <table>
+        <tr>
+            <textarea class="ioText" id="operand1" autofocus placeholder="-Inf -> Inf"></textarea>
+            <textarea class="ioText" id="operand2" autofocus placeholder="-Inf -> Inf"></textarea>
+        </tr>
+        <tr>
+            <div>
+                <button type="button" onclick="calculatorTime('+')">+</button>
+                <button type="button" onclick="calculatorTime('-')">-</button>
+                <button type="button" onclick="calculatorTime('*')">*</button>
+                <button type="button" onclick="calculatorTime('/')">/</button>
+            </div>
+        </tr>
+        <tr>
+            <textarea class="ioText" id="output3" contenteditable="false"></textarea>
+        </tr>
+    </table>
+
+</body>
+<footer>
+    <div class="container" ><a href="/index.html">Return to Index</a></div>
+</footer>
+</html>

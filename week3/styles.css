@@ -1,0 +1,52 @@
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, .ioText {
+    padding: 1px 5px;
+    box-sizing: content-box;
+    font-size: 1em;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin-left: 1em
+}
+
+.ioText {
+    background-color: ivory;
+    width: 50%;
+    min-height: 3rem;
+    margin: 1rem;
+}
+
+.container {
+    width: 80%;
+    min-height: 3rem;
+}
+
+tr{
+    min-height: 3rem;
+}
+
+hr.rounded {
+    width: 100%;
+    border-top: 8px solid #0f4d80;
+    border-radius: 5px;
+}
+
+#backg {
+    height: 100%;
+    width: 100%;
+    background-color:  aliceblue;
+    opacity: 30%;
+    clip-path: polygon(25% 0, 0 20%, 75% 20%, 55% 50%, 75% 80%, 0 80%, 25% 100%, 75% 100%, 100% 75%, 80% 50%, 100% 20%, 75% 0);    position: absolute;
+    z-index: -1;
+}
+
+#title {
+    margin-bottom: 2rem;
+    border-bottom: solid;
+    border-color: #505050;
+}
